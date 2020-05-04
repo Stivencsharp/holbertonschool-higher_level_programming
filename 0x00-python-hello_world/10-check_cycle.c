@@ -11,6 +11,8 @@ int check_cycle(listint_t *head)
 	listint_t *fast_node = head;
 	listint_t *slow_node = head;
 
+    if(!head)
+        return (0);
 	while (fast_node->next && fast_node->next->next)
 	{
 		fast_node = fast_node->next->next;

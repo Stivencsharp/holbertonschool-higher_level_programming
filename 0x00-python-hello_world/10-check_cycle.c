@@ -8,10 +8,6 @@
 
 int check_cycle(listint_t *head)
 {
-	if (!head)
-		return (0);
-	if (!head->next)
-		return (0);
 	listint_t *fast_node = head;
 	listint_t *slow_node = head;
 

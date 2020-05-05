@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 numbers = "{}{}, "
 for first_digit in range(0, 9):
     second_digit = 1 + first_digit

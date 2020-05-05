@@ -10,5 +10,5 @@ if last_digit > 5:
 elif last_digit is 0:
     is_than = "and is 0"
 else:
-    is_than = "and is less than 6 and no 0"
+    is_than = "and is less than 6 and not 0"
 print("Last digit of " + str(number) + " is " + str(last_digit), is_than)

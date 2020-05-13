@@ -1,5 +1,6 @@
 #!/usr/bin/python3
-import sys
+if __name__ == "__main__":
+    import sys
 arguments_len = len(sys.argv)
 if arguments_len < 2:
     print("0 arguments.")

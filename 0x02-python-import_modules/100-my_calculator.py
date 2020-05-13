@@ -18,4 +18,5 @@ elif sign == '*':
 elif sign == '/':
     print("{:d} {:s} {:d} = {:d}".format(num1, sign, num2, div(num1, num2)))
 else:
-    print("{:s}".format("Unknown operator. Available operators: +, -, * and /"))
+    print("Unknown operator. Available operators: +, -, * and /")
+    exit(1)

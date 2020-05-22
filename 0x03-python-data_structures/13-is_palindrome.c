@@ -11,7 +11,7 @@ int is_palindrome(listint_t **head)
 	listint_t *second_part = *head;
 	listint_t *first_part = *head;
 
-	if (!first_part->next)
+	if (!first_part->next || !head)
 		return (1);
 	return (pal(&first_part, second_part));
 }

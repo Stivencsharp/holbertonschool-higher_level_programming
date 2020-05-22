@@ -3,7 +3,7 @@
 /**
   * is_palindrome - Function to check if a linked list is a palindrome
   * @head: the first node of the list
-  * Return: 1 if it is not a palindrome and 0 if it is a palindrome
+  * Return: 0 if it is not a palindrome and 1 if it is a palindrome
   **/
 
 int is_palindrome(listint_t **head)
@@ -11,7 +11,7 @@ int is_palindrome(listint_t **head)
 	listint_t *second_part = *head;
 	listint_t *first_part = *head;
 
-	if (!first_part->next || !head)
+	if (*head == NULL)
 		return (1);
 	return (pal(&first_part, second_part));
 }

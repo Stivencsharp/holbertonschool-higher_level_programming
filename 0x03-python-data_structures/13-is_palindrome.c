@@ -30,7 +30,7 @@ int pal(listint_t **fn, listint_t *sn)
 	if (sn->next)
 		n = pal(fn, sn->next);
 	if (n == 0)
-		return (1);
+		return (0);
 	if ((*fn)->n == sn->n)
 	{
 		(*fn) = (*fn)->next;

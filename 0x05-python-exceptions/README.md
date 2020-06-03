@@ -1,0 +1,1 @@
+Project of exeptions in python

@@ -1,8 +1,6 @@
 #!/usr/bin/python3
 if __name__ == "__main__":
     import sys
-
-
 def safe_print_integer_err(value):
     try:
         if True is value is False:

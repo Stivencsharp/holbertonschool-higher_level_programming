@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 # -*- coding: utf-8 -*-
-""" Creating a class
+""" Creating a Square class
 """
 
 

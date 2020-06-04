@@ -4,6 +4,7 @@
 
 class Square:
     """A Square class with a size as instance variable"""
+
     def __init__(self, size=0, position=(0, 0)):
         self.size = size
         self.position = position
@@ -27,9 +28,15 @@ class Square:
 
     @position.setter
     def position(self, position):
+        err_message = ("position must be a tuple "
+                       "of 2 positive integers")
+        if len(position) != 2:
+            raise TypeError(err_message)
         for item in position:
             if not isinstance(item, int):
-                raise TypeError("position must be a tuple of 2 positive integers")
+                raise TypeError(err_message)
+            if item < 0:
+                raise ValueError(err_message)
         self.__position = position
 
     def area(self):
@@ -41,5 +48,6 @@ class Square:
         else:
             print(self.position[1] * '\n', end='')
             for column in range(self.size):
-                print("{}{}".format(self.position[0] * ' ', self.size * '#'), end='')
+                print("{}{}".format(self.position[0] * ' ',
+                                    self.size * '#'), end='')
                 print()

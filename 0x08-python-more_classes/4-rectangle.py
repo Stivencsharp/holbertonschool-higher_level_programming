@@ -6,15 +6,18 @@ class Rectangle:
     """Rectangle Class with two attrbutes. Width and Height"""
 
     def __init__(self, width=0, height=0):
+        """Init function with width and height as arguments"""
         self.width = width
         self.height = height
 
     @property
     def width(self):
+        """The getter of the width attribute"""
         return self.__width
 
     @width.setter
     def width(self, width):
+        """The setter of the width attribute"""
         if type(width) is not int:
             raise TypeError("width must be an integer")
         if width < 0:
@@ -23,10 +26,12 @@ class Rectangle:
 
     @property
     def height(self):
+        """The getter of the height attribute"""
         return self.__height
 
     @height.setter
     def height(self, height):
+        """The setter of the height attribute"""
         if type(height) is not int:
             raise TypeError("height must be an integer")
         if height < 0:

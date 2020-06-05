@@ -63,7 +63,3 @@ class SinglyLinkedList:
             current_node = current_node.next_node
         new_node.next_node = current_node.next_node
         current_node.next_node = new_node
-
-
-sll = SinglyLinkedList()
-print(sll)

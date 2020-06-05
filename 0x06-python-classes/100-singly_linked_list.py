@@ -38,7 +38,7 @@ class SinglyLinkedList:
     def __str__(self):
         linked_list = ''
         if self.head is None:
-            return
+            return linked_list
         current_node = self.head
         while current_node is not None:
             if current_node.next_node is None:
@@ -63,3 +63,7 @@ class SinglyLinkedList:
             current_node = current_node.next_node
         new_node.next_node = current_node.next_node
         current_node.next_node = new_node
+
+
+sll = SinglyLinkedList()
+print(sll)

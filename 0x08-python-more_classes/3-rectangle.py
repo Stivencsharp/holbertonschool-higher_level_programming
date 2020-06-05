@@ -47,6 +47,23 @@ class Rectangle:
         rect_str = ""
         _rectangle = []
         for column in range(self.height):
-            _rectangle.append(self.width * '#' + '\n')
+            if column == self.height - 1:
+                _rectangle.append(self.width * '#')
+            else:
+                _rectangle.append(self.width * '#' + '\n')
             rect_str += _rectangle[column]
         return rect_str
+
+
+my_rectangle = Rectangle(2, 4)
+print("Area: {} - Perimeter: {}".format(my_rectangle.area(), my_rectangle.perimeter()))
+
+print(str(my_rectangle))
+print(repr(my_rectangle))
+
+print("--")
+
+my_rectangle.width = 10
+my_rectangle.height = 3
+print(my_rectangle)
+print(repr(my_rectangle))

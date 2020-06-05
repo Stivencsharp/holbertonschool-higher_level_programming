@@ -49,7 +49,7 @@ class Square:
     def my_print(self, print_line=0):
         if self.size == 0 and print_line != 1:
             print()
-        elif self.size == 0 and print_line != 1:
+        elif self.size == 0 and print_line == 1:
             pass
         else:
             print(self.position[1] * '\n', end='')
@@ -58,3 +58,7 @@ class Square:
                                     self.size * '#'), end='')
                 if column != self.size - 1 or print_line != 1:
                     print()
+
+
+my_square = Square(0, (10, 10))
+print(my_square)

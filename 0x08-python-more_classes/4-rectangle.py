@@ -34,14 +34,17 @@ class Rectangle:
         self.__height = height
 
     def area(self):
+        """The area based on the height by the width"""
         return self.height * self.width
 
     def perimeter(self):
+        """The perimeter based on the height and width by 2"""
         if self.height == 0 or 0 == self.width:
             return 0
         return (self.height + self.width) * 2
 
     def __str__(self):
+        """Print the Rectangule based on the height and the width"""
         if self.height == 0 or 0 == self.width:
             return ""
         rect_str = ""
@@ -55,4 +58,5 @@ class Rectangle:
         return rect_str
 
     def __repr__(self):
+        """Return the string representation of rectangle"""
         return f'Rectangle({self.width}, {self.height})'

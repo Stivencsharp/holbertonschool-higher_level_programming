@@ -58,7 +58,3 @@ class Square:
                                     self.size * '#'), end='')
                 if column != self.size - 1 or print_line != 1:
                     print()
-
-
-my_square = Square(0, (10, 10))
-print(my_square)

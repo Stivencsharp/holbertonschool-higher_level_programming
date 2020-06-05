@@ -43,10 +43,10 @@ class Square:
         return self.__size ** 2
 
     def __str__(self):
-        self.my_print()
+        self.my_print(1)
         return ''
 
-    def my_print(self):
+    def my_print(self, print_line=0):
         if self.size == 0:
             print()
         else:
@@ -54,7 +54,8 @@ class Square:
             for column in range(self.size):
                 print("{}{}".format(self.position[0] * ' ',
                                     self.size * '#'), end='')
-                print()
+                if column != self.size - 1 or print_line != 1:
+                    print()
 
 
 my_square = Square(5, (0, 0))

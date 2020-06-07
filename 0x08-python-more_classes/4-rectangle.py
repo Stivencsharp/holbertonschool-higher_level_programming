@@ -5,16 +5,8 @@
 class Rectangle:
     """Rectangle Class with two attrbutes. Width and Height"""
 
-    """
-    Attributes:
-    
-    area: calculated through the multiply of width and height
-    
-    perimeter: calculated through the sum of width and height by 2
-        
-    """
-
     def __init__(self, width=0, height=0):
+        """Initilize the instance with width and height as arguments"""
         self.width = width
         self.height = height
 
@@ -50,8 +42,8 @@ class Rectangle:
             return 0
         return (self.height + self.width) * 2
 
-    """Print the rectangle based on the width and height"""
     def __str__(self):
+        """Print the rectangle with '#' based in the height and width"""
         if self.height == 0 or 0 == self.width:
             return ""
         rect_str = ""
@@ -64,6 +56,6 @@ class Rectangle:
             rect_str += _rectangle[column]
         return rect_str
 
-    """Return the string representation of rectangle"""
     def __repr__(self):
+        """Return the string representation of rectangle"""
         return f'Rectangle({self.width}, {self.height})'

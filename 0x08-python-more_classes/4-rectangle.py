@@ -1,12 +1,11 @@
 #!/usr/bin/python3
-"""Create a Rectangle Class"""
+""" Create a Rectangle Class """
 
 
 class Rectangle:
-    """Rectangle Class with two attrbutes. Width and Height"""
+    """ Rectangle Class with two attrbutes. Width and Height """
 
     def __init__(self, width=0, height=0):
-        """Initilize the instance with width and height as arguments"""
         self.width = width
         self.height = height
 
@@ -43,7 +42,6 @@ class Rectangle:
         return (self.height + self.width) * 2
 
     def __str__(self):
-        """Print the rectangle with '#' based in the height and width"""
         if self.height == 0 or 0 == self.width:
             return ""
         rect_str = ""
@@ -57,5 +55,4 @@ class Rectangle:
         return rect_str
 
     def __repr__(self):
-        """Return the string representation of rectangle"""
         return f'Rectangle({self.width}, {self.height})'

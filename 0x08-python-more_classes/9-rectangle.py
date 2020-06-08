@@ -63,7 +63,7 @@ class Rectangle:
             return rect_1
         return rect_2
 
-    @staticmethod
+    @classmethod
     def square(cls, size=0):
         new_instance = Rectangle(size, size)
         return new_instance
@@ -83,10 +83,3 @@ class Rectangle:
     def __repr__(self):
         """Return the string representation of rectangle"""
         return "Rectangle({}, {})".format(self.width, self.height)
-
-
-Rectangle = __import__('9-rectangle').Rectangle
-
-my_square = Rectangle.square(5)
-print("Area: {} - Perimeter: {}".format(my_square.area(), my_square.perimeter()))
-print(my_square)

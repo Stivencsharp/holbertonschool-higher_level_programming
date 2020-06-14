@@ -7,3 +7,8 @@ class MyList(list):
 
     def print_sorted(self):
         print(sorted(self))
+        return sorted(self)
+
+    def __str__(self):
+        list_copy = self.copy()
+        return "{}".format(list_copy)

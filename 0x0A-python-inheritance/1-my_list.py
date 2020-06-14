@@ -9,6 +9,7 @@ class MyList(list):
         self._list = []
 
     def print_sorted(self):
+        print(sorted(self._list))
         return sorted(self._list)
 
     def append(self, value):
@@ -17,3 +18,7 @@ class MyList(list):
     def __str__(self):
         print(self._list, end='')
         return ''
+
+
+my_list = MyList()
+my_list.print_sorted()

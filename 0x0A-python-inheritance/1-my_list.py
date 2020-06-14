@@ -10,7 +10,6 @@ class MyList(list):
 
     def print_sorted(self):
         print(sorted(self._list))
-        return sorted(self._list)
 
     def append(self, value):
         self._list.append(value)

@@ -21,14 +21,3 @@ Add negative numbers:
     >>> my_list.append(-5)
     >>> my_list.print_sorted()
     [-40, -5, 1, 30]
-
-Pass more than 1 argument:
-
-    >>> my_list = MyList()
-    >>> my_list.append(-40)
-    >>> my_list.append(30, 8)
-    >>> my_list.append(-5)
-    >>> my_list.print_sorted()
-    Traceback (most recent call last):
-                   ...
-    TypeError: append() takes 2 positional arguments but 3 were given

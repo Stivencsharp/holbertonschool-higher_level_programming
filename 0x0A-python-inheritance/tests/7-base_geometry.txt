@@ -8,19 +8,21 @@ Cases:
 
 Age as integer error:
 
-    >>> h.integer_validator('age', float(2))
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator('age', float(2))
     Traceback (most recent call last):
     TypeError: age must be an integer
 
 Name greater than error:
 
-    >>> h.integer_validator('name', -1)
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator('name', -1)
     Traceback (most recent call last):
     ValueError: name must be greater than 0
 
 Area test:
 
-     >>> h = BaseGeometry()
-     >>> h.area()
+     >>> bg = BaseGeometry()
+     >>> bg.area()
      Traceback (most recent call last):
      Exception: area() is not implemented

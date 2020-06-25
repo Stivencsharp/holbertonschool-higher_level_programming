@@ -1,0 +1,26 @@
+Edge cases for task 7-base_geometry
+
+***********************************************
+
+       >>> BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+Cases:
+
+Age as integer error:
+
+    >>> h.integer_validator('age', float(2))
+    Traceback (most recent call last):
+    TypeError: age must be an integer
+
+Name greater than error:
+
+    >>> h.integer_validator('name', -1)
+    Traceback (most recent call last):
+    ValueError: name must be greater than 0
+
+Area test:
+
+     >>> h = BaseGeometry()
+     >>> h.area()
+     Traceback (most recent call last):
+     Exception: area() is not implemented

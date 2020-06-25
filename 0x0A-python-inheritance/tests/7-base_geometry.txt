@@ -26,3 +26,38 @@ Area test:
      >>> bg.area()
      Traceback (most recent call last):
      Exception: area() is not implemented
+
+No arguments:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator()
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+Just 'name' argument:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("name")
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Just 'value' argument:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator(12)
+     Traceback (most recent call last):
+     TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+Value equal to 0:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("name", 0)
+     Traceback (most recent call last):
+    ValueError: name must be greater than 0
+
+Value is string:
+
+     >>> bg = BaseGeometry()
+     >>> bg.integer_validator("name", "10")
+     Traceback (most recent call last):
+     TypeError: age must be an integer
